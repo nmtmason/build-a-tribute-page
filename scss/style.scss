@@ -1,0 +1,95 @@
+@import 'base';
+
+$heading1-color: $white;
+$heading1-background: linear-gradient(141deg, $teal 0%, $blue 51%, darken($blue, 10%) 75%);
+$heading1-border-color: $orange;
+$heading1-padding: $spacer;
+$content-spacer: ($spacer * 2);
+
+body {
+  margin: 0;
+}
+
+h1 {
+  color: $heading1-color;
+  background: $heading1-background;
+  border-bottom: 1px solid $heading1-border-color;
+  padding: $heading1-padding;
+}
+
+section {
+  margin: $content-spacer;
+}
+
+$timeline-border-color: $gray-light;
+$timeline-background-color: $white;
+$timeline-border-width: ($spacer / 4);
+$circle-margin-left: -0.675rem;
+$circle-margin-right: $spacer;
+$circle-width: ($spacer * 1.5);
+$circle-height: ($spacer * 1.5);
+
+$time-width: ($spacer * 3);
+$time-padding-right: $spacer;
+$time-margin-right: $spacer;
+
+$content-background-color: $gray-lightest;
+$published-content-color: $white;
+$published-content-background-color: $orange;
+$content-padding: ($spacer / 4);
+
+.timeline {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: $spacer;
+    bottom: ($spacer * 2);
+    width: $timeline-border-width;
+    content: '';
+    background: $timeline-border-color;
+  }
+}
+
+li {
+  display: flex;
+  position: relative;
+  margin-bottom: $spacer;
+}
+
+.circle {
+  margin-left: $circle-margin-left;
+  margin-right: $circle-margin-right;
+  border-radius: 50%;
+  border: $timeline-border-width solid $timeline-border-color;
+  background-color: $timeline-background-color;
+  width: $circle-width;
+  height: $circle-height;
+}
+
+article {
+  display: flex;
+   flex-basis: 100%;
+}
+
+.time {
+  flex-shrink: 0;
+  width: $time-width;
+  padding-right: $time-padding-right;
+  border-right: 1px solid $content-background-color;
+  margin-right: $time-margin-right;
+}
+
+.content,
+.published-content {
+  padding: $content-padding;
+}
+
+.content {
+  background-color: $content-background-color;
+}
+
+.published-content {
+  color: $published-content-color;
+  background-color: $published-content-background-color;
+}
