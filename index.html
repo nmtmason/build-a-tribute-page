@@ -1,184 +1,107 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Build a Tribute Page</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <h1>Patrick Leigh Fermor</h1>
-    <section>
-      <blockquote>
-        Information collated from <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
-      </blockquote>
-      <ul class="list-unstyled timeline">
-        <li>
-          <span class="circle"></span>
-          <article>
-            <div class="time">
-              *
-            </div>
-            <div class="content">
-              <img class="img-responsive img-thumbnail" src="http://ichef.bbci.co.uk/news/624/media/images/79102000/jpg/_79102731_leighfermor1.jpg">
-            </div>
-          </article>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Build a Tribute Page</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page">
+  <section class="introduction">
+    <div class="introduction__profile">
+      <div class="introduction__synopsis">
+        Traveller, Soldier and Writer
+      </div>
+      <h1 class="introduction__title">
+        Patrick Leigh Fermor
+      </h1>
+      <div class="introduction__lifespan">
+        1915 - 2011
+      </div>
+      <div class="introduction__quote">
+        “Live, don't know how long,
+        <br> And die, don't know when;
+        <br> Must go, don't know where;
+        <br> I am astonished I am so cheerful.”
+      </div>
+      <nav class="introduction__navigation">
+        <a href="https://github.com/nmtmason/build-a-tribute-page" class="button button--primary">
+          GitHub
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Patrick_Leigh_Fermor" class="button button--secondary button--shifted">
+          Wikipedia Entry
+        </a>
+      </nav>
+    </div>
+    <img class="introduction__picture" src="/images/patrick-leigh-fermor-portrait.png" alt="Patrick Leigh Fermor by the water">
+  </section>
+
+  <section class="biography">
+    <div class="biography__container">
+      <h2 class="biography__title">Biography</h2>
+      <p class="biography__text">
+        Born Patrick Michael Leigh Fermor in London, England, the son of Sir Lewis Leigh Fermor, a distinguished geologist, and Muriel
+        Aeyleen, daughter of Charles Taafe Ambler. Shortly after his birth, his mother and sister left to join his father
+        in India, leaving the infant Patrick in England with a family in Northamptonshire. He did not meet his family in
+        person until he was four years old. As a child, Leigh Fermor had problems with academic structure and limitations.
+        As a result, he was sent to a school for "difficult children". He was later expelled from The King's School, Canterbury,
+        when he was caught holding hands with a greengrocer's daughter.
+      </p>
+      <p class="biography__text">
+        At the age of 18, Leigh Fermor decided to walk the length of Europe, from the Hook of Holland to Constantinople (Istanbul).
+        He set off on 8 December 1933, less than a year after Hitler had come to power in Germany, with a few clothes, several
+        letters of introduction, the Oxford Book of English Verse and a Loeb volume of Horace's Odes. He slept in barns and
+        shepherds' huts, but also was invited by landed gentry and aristocracy into the country houses of Central Europe.
+        He experienced hospitality in many monasteries along the way.
+      </p>
+      <p class="biography__text">
+        Leigh Fermor arrived in Istanbul on 1 January 1935, then continued to travel around Greece. In March, he was involved in
+        the campaign of royalist forces in Macedonia against an attempted Republican revolt. In Athens, he met Balasha Cantacuzène
+        (Bălaşa Cantacuzino), a Romanian Phanariote noblewoman, with whom he fell in love. They shared an old watermill outside
+        the city looking out towards Poros, where she painted and he wrote. They moved on to Băleni, Galați, the Cantacuzène
+        house in Moldavia, Romania, where he remained until the autumn of 1939.
+      </p>
+      <p class="biography__text">On learning that Britain had declared war on Germany on 3 September 1939, Leigh Fermor immediately left Romania to
+        return home and enlist in the army. </p>
+  </section>
+
+  <section class="selected-works">
+    <div class="selected-works__container">
+      <h2 class="selected-works__title">Selected works</h2>
+      <ul class="selected-works__list">
+        <li class="selected-works__list-item">
+          <em>The Travellers Tree</em> (1950)
         </li>
-        <li>
-          <span class="circle"></span>
-          <article>
-            <div class="time">
-              1915
-            </div>
-            <div class="content">
-              <p>Born Patrick Michael Leigh Fermor in London, England, the son of Sir Lewis Leigh Fermor, a distinguished geologist, and Muriel Aeyleen, daughter of Charles Taafe Ambler. Shortly after his birth, his mother and sister left to join his father in India, leaving the infant Patrick in England with a family in Northamptonshire. He did not meet his family in person until he was four years old. As a child, Leigh Fermor had problems with academic structure and limitations. As a result, he was sent to a school for "difficult children". He was later expelled from The King's School, Canterbury, when he was caught holding hands with a greengrocer's daughter.</p>
-            </div>
-          </article>
+        <li class="selected-works__list-item">
+          <em>The Violins of Saint-Jacques</em> (1953)
         </li>
-        <li>
-          <span class="circle"></span>
-          <article>
-            <div class="time">
-              1933
-            </div>
-            <p class="content">
-              At the age of 18, Leigh Fermor decided to walk the length of Europe, from the Hook of Holland to Constantinople (Istanbul). He set off on 8 December 1933, less than a year after Hitler had come to power in Germany, with a few clothes, several letters of introduction, the Oxford Book of English Verse and a Loeb volume of Horace's Odes. He slept in barns and shepherds' huts, but also was invited by landed gentry and aristocracy into the country houses of Central Europe. He experienced hospitality in many monasteries along the way.
-            </p>
-          </article>
+        <li class="selected-works__list-item">
+          <em>A Time to Keep Silence</em> (1957)
         </li>
-        <li>
-          <span class="circle"></span>
-          <article>
-            <div class="time">
-              1935
-            </div>
-            <p class="content">
-              Leigh Fermor arrived in Istanbul on 1 January 1935, then continued to travel around Greece. In March, he was involved in the campaign of royalist forces in Macedonia against an attempted Republican revolt. In Athens, he met Balasha Cantacuzène (Bălaşa Cantacuzino), a Romanian Phanariote noblewoman, with whom he fell in love. They shared an old watermill outside the city looking out towards Poros, where she painted and he wrote. They moved on to Băleni, Galați, the Cantacuzène house in Moldavia, Romania, where he remained until the autumn of 1939.
-            </p>
-          </article>
+        <li class="selected-works__list-item">
+          <em>Mani - Travels in the Southern Peloponnese</em> (1958)
         </li>
-        <li>
-          <span class="circle"></span>
-          <article>
-            <div class="time">
-              1939
-            </div>
-            <p class="content">
-              On learning that Britain had declared war on Germany on 3 September 1939, Leigh Fermor immediately left Romania to return home and enlist in the army.
-            </p>
-          </article>
+        <li class="selected-works__list-item">
+          <em>Roumeli</em> (1966)
         </li>
-        <li>
-          <span class="circle"></span>
-          <article>
-            <div class="time">
-              1950
-            </div>
-            <p class="published-content">
-              The Traveller's Tree
-            </p>
-          </article>
+        <li class="selected-works__list-item">
+          <em>A Time of Gifts - On Foot to Constantinople: From the Hook of Holland to the Middle Danube</em> (1977)
         </li>
-        <li>
-          <span class="circle"></span>
-          <article>
-            <div class="time">
-              1953
-            </div>
-            <p class="published-content">
-              The Violins of Saint-Jacques
-            </p>
-          </article>
+        <li class="selected-works__list-item">
+          <em>Between the Woods and the Water</em> (1986)
         </li>
-        <li>
-          <span class="circle"></span>
-          <article>
-            <div class="time">
-              1957
-            </div>
-            <p class="published-content">
-              A Time to Keep Silence
-            </p>
-          </article>
+        <li class="selected-works__list-item">
+          <em>Three Letters from the Andes</em> (1991)
         </li>
-        <li>
-          <span class="circle"></span>
-          <article>
-            <div class="time">
-              1958
-            </div>
-            <p class="published-content">
-              Mani - Travels in the Southern Peloponnese
-            </p>
-          </article>
-        </li>
-        <li>
-          <span class="circle"></span>
-          <article>
-            <div class="time">
-              1966
-            </div>
-            <p class="published-content">
-              Roumeli
-            </p>
-          </article>
-        </li>
-        <li>
-          <span class="circle"></span>
-          <article>
-            <div class="time">
-              1977
-            </div>
-            <p class="published-content">
-              A Time of Gifts - On Foot to Constantinople: From the Hook of Holland to the Middle Danube
-            </p>
-          </article>
-        </li>
-        <li>
-          <span class="circle"></span>
-          <article>
-            <div class="time">
-              1986
-            </div>
-            <p class="published-content">
-              Between the Woods and the Water
-            </p>
-          </article>
-        </li>
-        <li>
-          <span class="circle"></span>
-          <article>
-            <div class="time">
-              1991
-            </div>
-            <p class="published-content">
-              Three Letters from the Andes
-            </p>
-          </article>
-        </li>
-        <li>
-          <span class="circle"></span>
-          <article>
-            <div class="time">
-              2003
-            </div>
-            <p class="published-content">
-              Words of Mercury (edited by Artemis Cooper)
-            </p>
-          </article>
-        </li>
-        <li>
-          <span class="circle"></span>
-          <article>
-            <div class="time">
-              2011
-            </div>
-            <p class="content">
-              Died, aged 86.
-            </p>
-          </article>
+        <li class="selected-works__list-item">
+          <em>Words of Mercury (edited by Artemis Cooper)</em> (2003)
         </li>
       </ul>
-    </section>
-  </body>
+    </div>
+  </section>
+</body>
+
 </html>

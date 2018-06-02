@@ -6,16 +6,9 @@
   "author": "Nicholas Mason <nmt.mason@googlemail.com>",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "node-sass": "^4.5.0",
-    "npm-run-all": "^4.0.1",
-    "onchange": "^3.2.1"
+    "browser-sync": "^2.18.8"
   },
   "scripts": {
-    "clean": "rm -rf css/*.css",
-    "css": "node-sass -o css scss",
-    "serve": "browser-sync start --server --files '*.html, css/*'",
-    "watch:css": "onchange 'scss/*' -- yarn run css",
-    "watch": "npm-run-all -p serve watch:css"
+    "start": "browser-sync start --server --files index.html css"
   }
 }
