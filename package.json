@@ -6,7 +6,7 @@
   "author": "Nicholas Mason <nmt.mason@googlemail.com>",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.18.8"
+    "browser-sync": "^2.24.4"
   },
   "scripts": {
     "start": "browser-sync start --server --files index.html css"
