@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": {},
   "author": "Nicholas Mason <nmt.mason@googlemail.com>",
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.24.4"
   },
